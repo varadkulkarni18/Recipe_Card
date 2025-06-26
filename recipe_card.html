@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Heaven - Recipe Collection</title>
+    <link rel="stylesheet" href="recipe_card.css">
+</head>
+<body>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Animated Background Elements -->
+    <div class="background-elements">
+        <div class="bg-element bg-element-1"></div>
+        <div class="bg-element bg-element-2"></div>
+        <div class="bg-element bg-element-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-title">
+                    <div class="chef-icon">👨‍🍳</div>
+                    <h1>Flavor Heaven</h1>
+                    <div class="sparkle">✨</div>
+                </div>
+                <p class="header-description">
+                    Discover world-class recipes from every corner of the globe. Cook, taste, and create memories with our curated collection of authentic dishes.
+                </p>
+            </div>
+        </header>
+
+        <!-- Filter Bar -->
+        <div class="filter-section">
+            <div class="filter-bar">
+                <div class="filter-header">
+                    <div class="filter-icon">🍽️</div>
+                    <h2>Filter by Cuisine</h2>
+                </div>
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-cuisine="All">
+                        <span class="filter-icon-small">🔍</span>
+                        All Recipes
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe Grid -->
+        <main class="main-content">
+            <div class="recipe-grid" id="recipeGrid">
+                <!-- Recipe cards will be dynamically generated here -->
+            </div>
+            
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🍽️</div>
+                <h3>No recipes found</h3>
+                <p>Try selecting a different cuisine filter.</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="chef-icon-small">👨‍🍳</div>
+                <span>Made with ❤️ for food lovers everywhere</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="recipe_card.js"></script>
+</body>
+</html>
